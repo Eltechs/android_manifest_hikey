@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Repositories -->
+
+  <remote name="eltechs" fetch="https://github.com/Eltechs" />
+  <!-- Ubt as an external module -->
+  <project path="external/ubt" name="android-ubt" revision="test" remote="eltechs" groups="default" />
+  <!-- Setaddr32 tool for address space limitation -->
+  <project path="external/setaddr32" name="setaddr32" revision="test" remote="eltechs" groups="default" />
+</manifest>
