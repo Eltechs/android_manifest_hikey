@@ -7,4 +7,12 @@
   <project path="external/ubt" name="android-ubt" revision="test" remote="eltechs" groups="default" />
   <!-- Setaddr32 tool for address space limitation -->
   <project path="external/setaddr32" name="setaddr32" revision="test" remote="eltechs" groups="default" />
+
+  <!-- Remove origin hikey device configuration and replace it by ours one-->
+  <remove-project path="device/linaro/hikey" name="device/linaro/hikey"/>
+  <project path="device/linaro/hikey" name="hikey960-aosp-device" revision="hikey960-armbt" groups="device,hikey,pdk" remote="eltechs" />
+  
+  <remove-project path="device/linaro/hikey-kernel" name="device/linaro/hikey-kernel"/>
+  <project path="device/linaro/hikey-kernel" name="hikey960-kernel-bin" revision="eltechs-4.9" remote="eltechs" groups="device,hikey,pdk" clone-depth="1" />  
+
 </manifest>
